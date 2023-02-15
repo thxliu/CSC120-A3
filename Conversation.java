@@ -14,16 +14,41 @@ class Conversation {
     if (response.contains("I ")){
       // String[] splitResponse = response.split(" ", 5);
       // String stringResponse = splitResponse.toString();
-      String newResponse = response.replace( "I ", "You ");
-      // String newResponse = String.join("You");
+      String newResponse = response.replace( "I ", "you ");
+      // String newResponse = String.join(" ");
       System.out.println(newResponse + "?");
     }
 
     else if (response.contains("I'm")){
+      String newResponse = response.replace( "I'm", "you're");
+      System.out.println(newResponse + "?");
+    }
+
+    else if (response.contains("me")){
+      String newResponse = response.replace( "me", "you");
+      System.out.println(newResponse + "?");
+    }
+
+    else if (response.contains("am")){
+      String newResponse = response.replace( "am", "are");
+      System.out.println(newResponse + "?");
+    }
+
+    else if (response.contains("you")){
       // String[] splitResponse = response.split(" ", 5);
       // String stringResponse = splitResponse.toString();
-      String newResponse = response.replace( "I'm", "You're");
+      String newResponse = response.replace( "you", "I");
       // String newResponse = String.join("You");
+      System.out.println(newResponse + "?");
+    }
+
+    else if (response.contains("my")){
+      String newResponse = response.replace( "my", "your");
+      System.out.println(newResponse + "?");
+    }
+
+    else if (response.contains("your")){
+      String newResponse = response.replace( "your", "my");
       System.out.println(newResponse + "?");
     }
 
@@ -39,20 +64,40 @@ class Conversation {
       String nextResponse = nextInput.nextLine();
 
       if (nextResponse.contains("I ")){
-        // String[] splitResponse = response.split(" ", 5);
-        // String stringResponse = splitResponse.toString();
-        String newResponse = nextResponse.replace( "I ", "You ");
-        // String newResponse = String.join("You");
+        String newResponse = nextResponse.replace( "I ", "you ");
         System.out.println(newResponse + "?");
       }
 
       else if (nextResponse.contains("I'm")){
-        // String[] splitResponse = response.split(" ", 5);
-        // String stringResponse = splitResponse.toString();
-        String newResponse = nextResponse.replace( "I'm", "You're");
-        // String newResponse = String.join("You");
+        String newResponse = nextResponse.replace( "I'm", "you're");
         System.out.println(newResponse + "?");
       }
+
+      else if (nextResponse.contains("me")){
+        String newResponse = nextResponse.replace( "me", "you");
+        System.out.println(newResponse + "?");
+      }
+
+      else if (nextResponse.contains("am")){
+        String newResponse = nextResponse.replace( "am", "are");
+        System.out.println(newResponse + "?");
+      }
+
+      else if (nextResponse.contains("you")){
+        String newResponse = nextResponse.replace( "you", "I");
+        System.out.println(newResponse + "?");
+      }
+
+      else if (nextResponse.contains("my")){
+        String newResponse = nextResponse.replace( "my", "your");
+        System.out.println(newResponse + "?");
+      }
+
+      else if (nextResponse.contains("your")){
+        String newResponse = nextResponse.replace( "your", "my");
+        System.out.println(newResponse + "?");
+      }
+      
 
       else {
         Random random = new Random();
