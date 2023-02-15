@@ -35,10 +35,7 @@ class Conversation {
     }
 
     else if (response.contains("you")){
-      // String[] splitResponse = response.split(" ", 5);
-      // String stringResponse = splitResponse.toString();
       String newResponse = response.replace( "you", "I");
-      // String newResponse = String.join("You");
       System.out.println(newResponse + "?");
     }
 
@@ -57,6 +54,7 @@ class Conversation {
       int index = random.nextInt(cannedResponses.length);
       System.out.println(cannedResponses[index]);
     }
+
     int i = 0;
     // while (i < numRounds) {
     for (i = 1; i < numRounds; i++) {
@@ -97,7 +95,6 @@ class Conversation {
         String newResponse = nextResponse.replace( "your", "my");
         System.out.println(newResponse + "?");
       }
-      
 
       else {
         Random random = new Random();
