@@ -3,7 +3,7 @@ Use this file to record your reflection on this assignment.
 - Which classmates did you consult with while working on this assignment?
     Sarah Chavez, Robbie Do
 - Which session(s) of TA / office hours did you attend?
-    Mon 2/13, Tues 2/14
+    Mon 2/13, Tues 2/14, Wed 2/15, Thurs 2/23, Mon 2/27
 - What are your initial impressions of Java? 
     Since there is a lot more needed to perform an action (i.e. print), it can make it easy to overlook a small step that can throw off your code. Also, there are many shared methods between Java and Python, but accessing them in Java is different so I frequently had to look up how to apply Python concepts to Java, such as setting a variable equal to the user input. Although Java still feels pretty overwhelming and new, I feel like I am starting to have a better grasp on it. 
 - Can you draw any conclusion about programming in general from the similarities or the differences between the two languages? 
